@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout style="@style/profileDetailsLayout">
+    <Button
+        android:id="@+id/create_profile_button"
+        android:text="Créer une fiche de profil"
+        style="@style/profileStyledButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout style="@style/profileDetailsLayout">
+    <Button
+        android:id="@+id/create_key_button"
+        android:text="Créer une fiche CLEF"
+        style="@style/profileStyledButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout style="@style/profileDetailsLayout">
+
+    <Button
+        android:id="@+id/search_button"
+        android:text="Rechercher une fiche de profil"
+        style="@style/profileStyledButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout style="@style/profileDetailsLayout">
+    <Button
+        android:id="@+id/search_button_key"
+        android:text="Rechercher une fiche de Clef"
+        style="@style/profileStyledButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout style="@style/profileDetailsLayout">
+    <Button
+        android:id="@+id/btn_connection"
+        android:layout_width="match_parent"
+        style="@style/profileStyledButton"
+        android:layout_height="wrap_content"
+        android:text="Connexion" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailKey"
+    tools:showIn="@layout/detailkey1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            style="@style/headerText"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:text="Création d'une Clef " />
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+
+
+            <TextView
+                android:id="@+id/keyname_vt"
+                android:text="keyname  : "
+
+                style="@style/profileDetailsTextMain" />
+
+            <EditText
+                style="@style/profileDetailsMiniText"
+                android:id="@+id/keyname"
+                android:layout_width="248dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/keyname_vt" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+
+
+            <TextView
+                android:id="@+id/emplacement_vt"
+                android:text="Emplacement : "
+                style="@style/profileDetailsTextMain"/>
+
+            <EditText
+                style="@style/profileDetailsMiniText"
+                android:id="@+id/emplacement"
+                android:layout_width="248dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/emplacement_vt" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="20dp"
+            android:background="@color/profileBackground">
+
+            <Button
+                android:id="@+id/mod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/profileStyledButton"
+                android:text="Modifier" />
+
+            <Button
+                android:id="@+id/sup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                style="@style/profileStyledButton"
+
+                android:text="Supprimer" />
+
+            <Button
+                android:id="@+id/back"
+                style="@style/profileStyledBackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:text="Retour"
+                 />
+        </RelativeLayout>
+        <View style="@style/proifleDetailsView" />
+    </LinearLayout>
+
+</ScrollView>

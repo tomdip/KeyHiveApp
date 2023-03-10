@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailProfile"
+    tools:showIn="@layout/detailprofil1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/headerText"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Création d'un Profil " />
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+
+            <TextView
+                android:id="@+id/prenom_vt"
+                style="@style/profileDetailsTextMain"
+
+                android:text="Prenom  : " />
+
+            <EditText
+                android:id="@+id/prenom"
+                style="@style/profileDetailsMiniText"
+                android:layout_width="248dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/prenom_vt" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+
+            <TextView
+                android:id="@+id/nom_vt"
+                style="@style/profileDetailsTextMain"
+                android:text="Nom :        " />
+
+            <EditText
+                android:id="@+id/nom"
+                style="@style/profileDetailsMiniText"
+                android:layout_width="248dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/nom_vt" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+
+            <TextView
+                android:id="@+id/email_vt"
+                style="@style/profileDetailsTextMain"
+                android:text="Email: " />
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/profileDetailsMiniText"
+                android:layout_width="248dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="38dp"
+                android:layout_toRightOf="@+id/email_vt" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <TextView
+                android:id="@+id/numerocarte_vt"
+                style="@style/profileDetailsTextMain"
+                android:text="Numéro de carte : " />
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/nfc_button"
+            style="@style/profileStyledButton"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cliquer pour scanner la carte " />
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <Button
+                android:id="@+id/add_key_button2"
+                style="@style/profileStyledButton"
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ajouter une clef" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="20dp"
+            android:background="@color/profileBackground"
+            android:gravity="center"
+
+            <Button
+                android:id="@+id/mod"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/profileStyledButton"
+                android:text="Modifier" />
+
+            <Button
+                android:id="@+id/sup"
+                style="@style/profileStyledButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Supprimer" />
+
+        <Button
+            android:id="@+id/back"
+            style="@style/profileStyledBackButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+
+            android:text="Retour" />
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+    </LinearLayout>
+
+</ScrollView>

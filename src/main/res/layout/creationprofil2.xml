@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Createprofil"
+    tools:showIn="@layout/creationprofil1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Creation de Profil"
+            style="@style/headerText"
+
+            />
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+
+
+            <TextView
+                android:id="@+id/prenom_vt"
+                android:text="Prenom  : "
+
+                style="@style/profileDetailsTextMain" />
+
+            <EditText
+                style="@style/profileDetailsMiniText"
+                android:id="@+id/prenom"
+                android:layout_width="248dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/prenom_vt" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+
+
+            <TextView
+                android:id="@+id/nom_vt"
+                android:text="Nom :        "
+                style="@style/profileDetailsTextMain"/>
+
+            <EditText
+                style="@style/profileDetailsMiniText"
+                android:id="@+id/nom"
+                android:layout_width="248dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/nom_vt" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+
+            <TextView
+                android:id="@+id/email_vt"
+                android:text="Email: "
+                style="@style/profileDetailsTextMain" />
+
+            <EditText
+                style="@style/profileDetailsMiniText"
+                android:id="@+id/email"
+                android:layout_width="248dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="38dp"
+                android:layout_toRightOf="@+id/email_vt" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <TextView
+                android:id="@+id/numerocarte_vt"
+                android:text="Numéro de carte : "
+                style="@style/profileDetailsTextMain" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+
+
+            <Button
+            android:id="@+id/nfc_button"
+            android:layout_width="360dp"
+            android:text="Cliquer pour scanner la carte "
+            style="@style/profileStyledButton"
+            />
+        </RelativeLayout>
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <Button
+                android:id="@+id/add_key_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ajouter une clef"
+                style="@style/profileStyledButton" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="20dp"
+            android:background="@color/profileBackground">
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/profileStyledButton"
+                android:text="Enregistrer" />
+
+            <Button
+                android:id="@+id/back"
+                style="@style/profileStyledBackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:text="Retour" />
+
+        </RelativeLayout>
+        <View style="@style/proifleDetailsView" />
+    </LinearLayout>
+
+</ScrollView>
